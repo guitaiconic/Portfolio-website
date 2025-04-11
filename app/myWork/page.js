@@ -1,3 +1,9 @@
+import Navigation from "../components/Navigation";
+
 export default function page() {
-  return <h1>My Work page</h1>;
+  return (
+    <div>
+      <h1>My Work page</h1>
+    </div>
+  );
 }

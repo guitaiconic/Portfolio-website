@@ -1,3 +1,7 @@
 export default function page() {
-  return <h1>Performance page</h1>;
+  return (
+    <div>
+      <h1>Performance page</h1>
+    </div>
+  );
 }
