@@ -3,7 +3,12 @@ import Navigation from "./components/Navigation";
 import Logo from "./components/Logo";
 
 export const metadata = {
-  title: "INI's Portfolio",
+  title: {
+    template: "%s | INI Portfolio",
+    default: "Welcome to INI Portfolio",
+  },
+  description:
+    "Welcome to the Ini portfolio with amazing dance clips, performances, and lifestyle of an amazing talented beautiful person ",
 };
 export default function RootLayout({ children }) {
   return (

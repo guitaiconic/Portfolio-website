@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Performance",
+};
+
 export default function page() {
   return (
     <div>
