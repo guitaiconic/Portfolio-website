@@ -2,6 +2,16 @@ import "@/app/_styles/globals.css";
 import Navigation from "./components/Navigation";
 import Logo from "./components/Logo";
 
+//Import Google Font
+import { Josefin_Sans } from "next/font/google";
+
+const JosefinFont = Josefin_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
+
+console.log(JosefinFont);
+
 export const metadata = {
   title: {
     template: "%s | INI Portfolio",
@@ -13,7 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-background text-primary-100 min-h-screen">
+      <body
+        className={`${JosefinFont.className} bg-background text-primary-100 min-h-screen`}
+      >
         <header>
           <Logo />
           <Navigation />
