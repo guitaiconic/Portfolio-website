@@ -1,6 +1,5 @@
 import "@/app/_styles/globals.css";
-import Navigation from "./components/Navigation";
-import Logo from "./components/Logo";
+import Header from "./_components/Header";
 
 //Import Google Font
 import { Josefin_Sans } from "next/font/google";
@@ -26,10 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${JosefinFont.className} bg-background text-primary-100 min-h-screen`}
       >
-        <header>
-          <Logo />
-          <Navigation />
-        </header>
+        <Header />
         <main>{children}</main>
         <footer>Copyright by INI</footer>
       </body>
