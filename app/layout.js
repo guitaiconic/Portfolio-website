@@ -17,17 +17,19 @@ export const metadata = {
     default: "Welcome to INI Portfolio",
   },
   description:
-    "Welcome to the Ini portfolio with amazing dance clips, performances, and lifestyle of an amazing talented beautiful person ",
+    "Welcome to the Ini portfolio with amazing dance clips, performances, and lifestyle of an amazing talented beautiful lady.",
 };
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${JosefinFont.className} bg-background text-primary-100 min-h-screen`}
+        className={`${JosefinFont.className} bg-background text-primary-100 min-h-screen flex flex-col antialiased`}
       >
         <Header />
-        <main>{children}</main>
-        <footer>Copyright by INI</footer>
+
+        <div className="flex-1 px-8 py-12">
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
