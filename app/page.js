@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import Spotlight from "./_components/Spotlight";
+import LatestWork from "./_components/LatestWork";
 
 export default function HomePage() {
   return (
@@ -16,9 +18,11 @@ export default function HomePage() {
                 dance, this space showcases my journey through rhythm, movement,
                 and visual storytelling.
               </p>
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded transition">
-                READ MORE
-              </button>
+              <Link href="/about">
+                <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded transition">
+                  READ MORE
+                </button>
+              </Link>
             </div>
 
             {/* Bottom Left Image */}
@@ -74,6 +78,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Spotlight />
+      <LatestWork />
     </main>
   );
 }
