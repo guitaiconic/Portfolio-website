@@ -1,14 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="bg-black text-white min-h-screen">
-      <section className="container mx-auto px-4 py-10">
-        <div className="grid md:grid-cols-2 gap-6">
+    <main className=" text-white min-h-screen">
+      <section>
+        <div className="grid md:grid-cols-2">
           {/* Left Side */}
           <div className="flex flex-col justify-between">
             {/* Top Text */}
-            <div className="flex flex-col justify-center space-y-6 h-[60%]">
+            <div>
               <p className="text-lg leading-relaxed">
                 Versatile and expressive, passionate about performance and
                 lifestyle art. With a unique blend of modeling, fashion, and
@@ -21,39 +22,54 @@ export default function HomePage() {
             </div>
 
             {/* Bottom Left Image */}
-            <div className="mt-6 h-[40%]">
+            <div className="relative">
               <Image
                 src="/Mywork.png"
                 alt="My Work"
                 width={800}
-                height={300}
-                className="w-full h-full object-cover rounded shadow-md"
+                height={400}
+                className="w-full h-[300px] object-cover rounded"
               />
+              <div className="absolute bottom-0 left-0 font-bold  hover:text-blue-500 uppercase ml-4 mb-4">
+                <Link href="/myWork" className="text-3xl">
+                  My <span className="text-blue-500">Work</span>
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* Right Side */}
-          <div className="flex flex-col justify-between">
-            {/* Top Right Big Image */}
-            <div className="h-[75%]">
+          <div>
+            {/* Top Right Image - Bigger */}
+            <div className="relative">
               <Image
                 src="/perf.png"
                 alt="Performance"
                 width={800}
                 height={600}
-                className="w-full h-full object-cover rounded shadow-md"
+                className="w-full h-[450px] object-cover rounded "
               />
+              <div className="absolute top-0 left-0 font-bold  hover:text-red-500 uppercase ml-4 mt-4">
+                <Link href="/myWork" className="text-3xl">
+                  Perfor <span className="text-red-500">mance</span>
+                </Link>
+              </div>
             </div>
 
-            {/* Bottom Right Small Image */}
-            <div className="mt-6 h-[25%]">
+            {/* Bottom Right Image - Smaller */}
+            <div className="relative">
               <Image
                 src="/lifestyle.png"
                 alt="Lifestyle"
                 width={800}
-                height={200}
-                className="w-full h-full object-cover rounded shadow-md"
+                height={300}
+                className="w-full h-[200px] object-cover rounded"
               />
+              <div className="absolute bottom-0 left-0 font-bold  hover:text-yellow-400 uppercase ml-4 mb-4">
+                <Link href="/myWork" className="text-3xl">
+                  Life <span className="text-yellow-400">style</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
