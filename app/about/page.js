@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "About",
 };
@@ -5,7 +7,7 @@ export const metadata = {
 export default function page() {
   return (
     <div>
-      <h1>About INI page</h1>
+      <Image src="/video.png" alt="About" width={800} height={400} />
     </div>
   );
 }
