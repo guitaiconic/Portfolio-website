@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LatestWork() {
   return (
-    <section className="py-16 bg-blue-300 text-black mt-8">
+    <div className="py-16 bg-blue-300 text-black mt-8">
       <div className="flex justify-between items-center px-6 mb-6">
         <h2 className="text-2xl font-bold">LATEST WORK</h2>
         <button className="bg-white text-blue-600 px-4 py-2 rounded">
@@ -41,6 +41,6 @@ export default function LatestWork() {
 
         {/* More cards... */}
       </div>
-    </section>
+    </div>
   );
 }
