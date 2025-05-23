@@ -1,11 +1,11 @@
-// components/Header.tsx
+//import components
 import Logo from "@/app/_components/Logo";
 import Navigation from "@/app/_components/Navigation";
 
 export default function Header() {
   return (
-    <header className="bg-black text-white py-6 px-4">
-      <div className="flex flex-col items-center">
+    <header className="bg-pink-200 fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px]">
+      <div>
         {/* Logo centered at top */}
         <Logo />
 

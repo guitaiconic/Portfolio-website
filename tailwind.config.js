@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#0e0e0e", // Almost black
+        background: "white", // White background
         accent: {
           light: "#f472b6", // Soft pink
           DEFAULT: "#db2777", // Hot pink (buttons etc.)
@@ -33,7 +33,14 @@ module.exports = {
         light: "#f3f4f6",
       },
       fontFamily: {
-        sans: ["Poppins", "ui-sans-serif", "system-ui"],
+        primary: ["Playfair Display", "serif"],
+        secondary: ["Mulish", "sans-serif"],
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1192px",
       },
     },
   },

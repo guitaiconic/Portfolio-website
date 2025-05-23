@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${JosefinFont.className} bg-background text-primary-100 min-h-screen flex flex-col antialiased`}
+        className={`${JosefinFont.className} bg-background text-primary font-secondary min-h-screen flex flex-col antialiased overflow-hidden`}
       >
         <Header />
 
