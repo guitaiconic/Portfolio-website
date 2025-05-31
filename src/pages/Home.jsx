@@ -16,9 +16,7 @@ export default function Home() {
             <h1 className="h1">
               Model <br /> & Dance Chreographer
             </h1>
-            <p className="text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12">
-              Blackpool, UK
-            </p>
+
             <Link to="/contact" className="btn rounded-full mb-[30px]">
               Hire me
             </Link>
