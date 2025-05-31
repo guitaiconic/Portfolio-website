@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="bg-pink-200 fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
+    <header className="fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center">
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* logo */}
         <Link to={"/"} className="max-w-[200px]">
@@ -16,7 +16,7 @@ export default function Header() {
         </Link>
 
         {/* Nav - Initially hidden - show on desktop mode */}
-        <nav className="hidden lg:flex gap-x-12 font-semibold">
+        <nav className="hidden xl:flex gap-x-12 font-semibold">
           <Link to={"/"} className="text-[#696c6d] hover:text-black transition">
             Home
           </Link>
