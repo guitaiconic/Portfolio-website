@@ -30,7 +30,7 @@ export default function About() {
               consequuntur.
             </p>
 
-            <Link to={"/portfolio"} className="btn">
+            <Link to={"/portfolio"} className="btn mb-[30px]">
               View my Work
             </Link>
           </div>
