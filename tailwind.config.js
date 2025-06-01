@@ -3,8 +3,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      primary: ["Irish Grover", "cursive"],
-      secondary: ["Arial", "sans-serif"],
+      primary: ["Playfair", "Display"],
+      secondary: ["Mulish"],
 
       screens: {
         sm: "640px",
