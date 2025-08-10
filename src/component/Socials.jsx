@@ -1,5 +1,3 @@
-import React from "react";
-
 //import icons
 import { ImFacebook, ImInstagram, ImYoutube, ImTwitter } from "react-icons/im";
 

@@ -19,6 +19,7 @@ export default function Contact() {
           <div className="lg:flex-1 lg:pt-32 px-4">
             <h1 className="h1">Contact me</h1>
             <p className="mb-12">I would love to get suggestions from you.</p>
+
             {/* form */}
             <form className="flex flex-col gap-y-4">
               <div className="flex gap-x-10">

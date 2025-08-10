@@ -48,36 +48,51 @@ export default function Portfolio() {
               Hire me
             </Link>
           </motion.div>
-          <div>{/* Images grid */}</div>
-          <div className="grid grid-cols-2 lg:gap-2  ">
-            {/* Image */}
-            <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
-                src={Image1}
-                alt=""
-              />
+          <div>{/* Video grid */}</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            {/* Video 1 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="aspect-w-16 aspect-h-9 w-full">
+                <iframe
+                  src="https://www.youtube.com/embed/W41VAovhNPQ"
+                  title="Dance Performance 1"
+                  allowFullScreen
+                  className="w-full h-full rounded-lg"
+                ></iframe>
+              </div>
+              <p className="mt-4 font-medium text-gray-700">
+                🔊 Hip-hop fusion video shoot
+              </p>
             </div>
-            <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
-                src={Image2}
-                alt=""
-              />
+
+            {/* Video 2 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="aspect-w-16 aspect-h-9 w-full">
+                <iframe
+                  src="https://www.youtube.com/embed/bhJNfGh-LQU"
+                  title="Dance Performance 2"
+                  allowFullScreen
+                  className="w-full h-full rounded-lg"
+                ></iframe>
+              </div>
+              <p className="mt-4 font-medium text-gray-700">
+                ✨ Short Movie clip
+              </p>
             </div>
-            <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
-                src={Image3}
-                alt=""
-              />
-            </div>
-            <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 transition-all duration-500"
-                src={Image4}
-                alt=""
-              />
+
+            {/* Video 3 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="aspect-w-16 aspect-h-9 w-full">
+                <iframe
+                  src="https://www.youtube.com/embed/-wg49wRwCUg"
+                  title="Dance Performance 3"
+                  allowFullScreen
+                  className="w-full h-full rounded-lg"
+                ></iframe>
+              </div>
+              <p className="mt-4 font-medium text-gray-700">
+                🔥 Afro Fusion dance class
+              </p>
             </div>
           </div>
         </div>

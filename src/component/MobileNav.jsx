@@ -65,6 +65,9 @@ export default function MobileNav() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li>
+            <Link to="/contact">Social Media</Link>
+          </li>
         </ul>
       </motion.div>
     </nav>
